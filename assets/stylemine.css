@@ -1,0 +1,59 @@
+.reservation-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.reservation-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.status-badge {
+    font-size: 0.85rem;
+    padding: 0.35rem 0.65rem;
+    border-radius: 30px;
+}
+
+.vehicle-image {
+    width: 90px;
+    height: 60px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.reservation-details {
+    font-size: 0.9rem;
+}
+
+.table-responsive {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.empty-state {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.empty-state i {
+    font-size: 4rem;
+    opacity: 0.2;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .table-view {
+        display: none;
+    }
+    .card-view {
+        display: block;
+    }
+}
+
+@media (min-width: 769px) {
+    .card-view {
+        display: none;
+    }
+    .table-view {
+        display: block;
+    }
+}
